@@ -61,6 +61,26 @@ public class zahlen {
         }
         return result;
     }
+    public int[] divide(int[] a, int x) {
+        int[] result = new int[a.length];
+        int remainder = 0;
+
+        for (int i = 0; i < a.length; i++) {
+            int current = remainder * 10 + a[i];
+            result[i] = current / x;
+            remainder = current % x;
+        }
+        int start = 0;
+        while (start < result.length - 1 && result[start] == 0) {
+            start++;
+        }
+        int[] shorter = new int[result.length - start];
+        for (int i = 0; i < shorter.length; i++) {
+            shorter[i] = result[start + i];
+        }
+
+        return shorter;
+    }
 }
 
 

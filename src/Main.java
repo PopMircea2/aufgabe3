@@ -21,5 +21,12 @@ public class Main {
             for (int i = 0; i < produkt.length; i++) {
                 System.out.println(produkt[i]);
             }
+            int [] p = {2,3,6,0,0,0};
+            int div = 2;
+            int [] quotient = z.divide(p,div);
+            System.out.println("Division:");
+            for (int i = 0; i < quotient.length; i++) {
+                System.out.println(quotient[i]);
+            }
         }
     }
