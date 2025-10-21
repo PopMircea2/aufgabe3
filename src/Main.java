@@ -4,6 +4,7 @@ public class Main {
             int [] a = {1,3,0,0,0,0};
             int [] b = {8,7,0,0,0,0};
             int [] ergebnis = z.Summe(a,b);
+            System.out.println("Addition: ");
             for (int i = 0; i < ergebnis.length; i++) {
                 System.out.println(ergebnis[i]);
             }
